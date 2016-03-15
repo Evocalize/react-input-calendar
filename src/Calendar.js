@@ -284,7 +284,7 @@ module.exports = React.createClass({
 
         let readOnly = false;
 
-        if (this.props.hideTouchKeyboard) {
+        if (this.props.hideTouchKeyboard || this.props.readOnly) {
           // do not break server side rendering:
           try {
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
